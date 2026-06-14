@@ -6,11 +6,13 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("Hi, I'm Dheeraj B 👋")
+    fmt.Println("Hi, I'm Dheeraj B")
 }
 ```
 
-# Dheeraj B — Backend Engineer
+# Dheeraj B
+
+Backend-focused developer building Go services, APIs, and practical full-stack projects.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dheeraj-b-807523387/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-00ACD7?style=for-the-badge&logo=go&logoColor=white)](https://portfolio-go.fly.dev)
@@ -20,33 +22,21 @@ func main() {
 
 ---
 
-### 🐹 About Me
+## About
 
-```yaml
-name: Dheeraj B
-role: Backend Engineer
-experience: 5+ years
-location: United States
+I like building backend systems that are simple to run, easy to reason about, and ready to grow. Most of my work is around Go APIs, service design, databases, real-time features, and deployment workflows.
 
-current:
-  company: Optum
-  focus: Go microservices, Healthcare systems
+Right now I am focused on:
 
-industries:
-  - Healthcare (Optum)
-  - Aviation (United Airlines)
-  - Travel (Costco Travel)
-  - Logistics (PepsiCo)
-
-building:
-  - GoChat — Real-time WebSocket chat in Go
-  - Bliksoul — Premium candle brand (Go backend)
-  - Gopher's Server Quest — Browser game on my portfolio
-```
+- Go backend services and REST APIs
+- SQLite, PostgreSQL, Redis, and data modeling
+- Docker-based local development
+- Real-time systems with WebSockets
+- Practical portfolio projects with clean READMEs and live demos
 
 ---
 
-### 🛠️ Tech Stack
+## Tech Stack
 
 **Languages**
 
@@ -58,44 +48,42 @@ building:
 **Backend & APIs**
 
 ![Gin](https://img.shields.io/badge/Gin-00ACD7?style=for-the-badge&logo=go&logoColor=white)
-![gRPC](https://img.shields.io/badge/gRPC-244c5a?style=for-the-badge&logo=google&logoColor=white)
 ![REST](https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white)
+![gRPC](https://img.shields.io/badge/gRPC-244c5a?style=for-the-badge&logo=google&logoColor=white)
 
-**Cloud & DevOps**
-
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-**Databases**
+**Databases & Infrastructure**
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-
-**Observability**
-
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
 ---
 
-### 🚀 Featured Projects
+## Featured Projects
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [🎮 Gopher's Server Quest](https://portfolio-go.fly.dev/game) | Browser game — survive a 3AM production incident | Go, Gin |
-| [💬 GoChat](https://github.com/rajbolamala-star/gochat-) | Real-time WebSocket chat with Go channels | Go, WebSocket |
-| [📦 Booking Platform](https://github.com/rajbolamala-star/booking-platform-go) | 4 microservices + API gateway | Go, Kafka, K8s |
-| [🔗 URL Shortener](https://github.com/rajbolamala-star/url-shortener-go) | Base62, Redis cache, rate limiting | Go, Redis |
-| [🤖 RAG Service](https://github.com/rajbolamala-star/rag-service-go) | AI retrieval + grounded generation | Go, pgvector |
-| [🕯️ Bliksoul](https://github.com/rajbolamala-star/bliksoul) | Premium candle store backend | Go, Gin |
+| Project | What it shows | Stack |
+|---------|---------------|-------|
+| [Booking Platform](https://github.com/rajbolamala-star/booking-platform-go) | Microservices, API gateway, async events, deployment structure | Go, Kafka, Docker, Kubernetes |
+| [RAG Service](https://github.com/rajbolamala-star/rag-service-go) | Retrieval pipeline, grounded generation, vector search concepts | Go, pgvector, APIs |
+| [Portfolio](https://github.com/rajbolamala-star/portfolio-go) | Personal portfolio with a live browser game and Go backend | Go, Gin, HTML/CSS |
+| [Gopher's Server Quest](https://portfolio-go.fly.dev/game) | Interactive browser game built into the portfolio | Go, Gin, JavaScript |
+| [URL Shortener](https://github.com/rajbolamala-star/url-shortener-go) | Short code generation, caching, rate limiting | Go, Redis |
+| [GoChat](https://github.com/rajbolamala-star/gochat-) | Real-time chat flow with WebSockets | Go, WebSocket |
 
 ---
 
-### 📊 GitHub Stats
+## What I Am Building Next
+
+- A photography portfolio platform with gallery uploads, admin controls, and image optimization
+- Cleaner project READMEs with screenshots, setup steps, API examples, and live demo links
+- More production-style backend examples with tests, Docker Compose, and observability notes
+
+---
+
+## GitHub Stats
 
 <div align="center">
 
@@ -103,14 +91,12 @@ building:
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rajbolamala-star&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ACD7)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=rajbolamala-star&theme=dark&hide_border=true&background=0d1117&ring=00ACD7&fire=00ACD7&currStreakLabel=00ACD7)
-
 </div>
 
 ---
 
 <div align="center">
 
-*Built with Go 🐹 — because performance matters*
+Built with Go, curiosity, and steady iteration.
 
 </div>
