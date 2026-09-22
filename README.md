@@ -1,90 +1,376 @@
-# Hi, I'm Dheeraj 👋
+<div align="center">
 
-### Backend Software Engineer · Go & Java · Distributed Systems
+# Hey, I'm Dheeraj 👋
 
-I build backend services that stay fast, reliable, and maintainable as they scale. My experience spans cloud-native microservices, event-driven systems, and production performance optimization across healthcare, aviation, and supply-chain applications.
+### Backend Software Engineer · Go · Distributed Systems · Cloud-Native Engineering
 
-Currently, I'm a **Software Developer II at Optum**, working with Go, Java, AWS, and Kubernetes. I bring **5 years of software engineering experience**, with a focus on turning complex workflows into dependable APIs and services.
+**I build backend systems designed for the things that eventually go wrong —
+traffic spikes, duplicate events, slow queries, retries, partial failures, and production incidents.**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square)](https://linkedin.com/in/dheeraj-b-807523387)
-[![Email](https://img.shields.io/badge/Email-Say%20hello-D14836?style=flat-square)](mailto:dheeraj.backend@yahoo.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Explore%20my%20work-181717?style=flat-square&logo=github)](https://github.com/rajbolamala-star)
+[![GitHub](https://img.shields.io/badge/GitHub-rajbolamala--star-181717?style=for-the-badge\&logo=github)](https://github.com/rajbolamala-star)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dheeraj_B-0A66C2?style=for-the-badge\&logo=linkedin)](https://linkedin.com/in/dheeraj-b)
+[![Email](https://img.shields.io/badge/Email-Let's_Talk-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:dheeraj.backend@yahoo.com)
 
-## What I work on
+</div>
 
-- **Backend services:** REST and gRPC APIs with Go, Gin, Java, and Spring Boot.
-- **Distributed systems:** Kafka messaging, concurrent workers, asynchronous processing, retries, and idempotency.
-- **Performance:** Redis caching, SQL query optimization, and service migrations that reduce latency and infrastructure costs.
-- **Production reliability:** Containerized deployments, observability, incident investigation, and root cause analysis.
+---
 
-## Selected impact
+## `whoami`
 
-| Area | Results |
-| --- | --- |
-| Service modernization | Migrated 3 core services from Java to Go, reducing infrastructure costs by approximately **20%** and average response latency from approximately **280 ms to under 150 ms** under peak load. |
-| Scale and throughput | Improved Spring Boot microservices handling **100K+ daily transactions**, increasing API throughput by up to **30%**. |
-| Database performance | Reduced average query execution time from approximately **420 ms to 290 ms** through indexing and query rewrites. |
-| API security | Implemented OAuth2 and role-based access control for **200+ operators across 50+ warehouses**. |
+```go
+package main
 
-## Featured projects
+import "fmt"
 
-### EventMesh — Distributed Event Processing Platform
+type Engineer struct {
+    Name       string
+    Focus      []string
+    Languages  []string
+    Building   string
+    Philosophy string
+}
 
-A Go-based platform for scalable, fault-tolerant event processing.
+func main() {
+    me := Engineer{
+        Name:      "Dheeraj B",
+        Languages: []string{"Go", "Java", "SQL"},
+        Focus: []string{
+            "Distributed Systems",
+            "Backend Architecture",
+            "Event-Driven Systems",
+            "Performance & Reliability",
+        },
+        Building:   "systems that stay boring in production",
+        Philosophy: "Measure → Understand → Simplify → Scale",
+    }
 
-- Processes Kafka events using consumer groups and concurrent workers.
-- Handles failures with retries, dead-letter queues, and idempotent message processing.
-- Combines PostgreSQL persistence, Redis caching, service metrics, and Kubernetes deployment.
+    fmt.Println(me)
+}
+```
 
-**Built with:** Go · Apache Kafka · PostgreSQL · Redis · Kubernetes
+---
 
-### IncidentAI — AI-Assisted Production Incident Analyzer
+## ⚡ What I Do
 
-A backend platform that helps investigate production incidents by connecting application logs, traces, and errors with relevant historical context.
+I’m a backend engineer with **5 years of software engineering experience** building and operating systems across healthcare, aviation, and supply-chain environments.
 
-- Correlates telemetry to identify likely incident root causes.
-- Uses vector retrieval and LLM analysis to generate incident summaries and remediation suggestions.
-- Makes previous incidents searchable to support future investigations.
+My work usually lives somewhere between:
 
-**Built with:** Go · Apache Kafka · pgvector · LLM APIs · OpenTelemetry
+```text
+API request
+    ↓
+Go / Java service
+    ↓
+Kafka event
+    ↓
+Concurrent processing
+    ↓
+Redis / PostgreSQL
+    ↓
+Observability
+    ↓
+Kubernetes
+    ↓
+Production
+```
 
-## Technical toolkit
+I care about what happens **after the happy path ends**:
 
-| Category | Technologies |
-| --- | --- |
-| Languages | Go, Java, SQL |
-| Backend & APIs | Spring Boot, Gin, REST, gRPC, Microservices |
-| Messaging & architecture | Apache Kafka, Event-Driven Architecture, Concurrency, Circuit Breakers, Idempotency |
-| Databases & caching | PostgreSQL, MySQL, Redis, pgvector |
-| Cloud & delivery | AWS, Docker, Kubernetes, CI/CD, Git |
-| Observability | Prometheus, Grafana, CloudWatch, OpenTelemetry |
-| Security | OAuth2, Role-Based Access Control |
-| Frontend experience | Angular, React, TypeScript |
+* What happens when Kafka delivers the same event twice?
+* What happens when a worker crashes before committing an offset?
+* What happens when PostgreSQL becomes the bottleneck?
+* What happens when an API suddenly handles 3× the traffic?
+* What happens when a deployment fails halfway through?
+* Can we trace a request across multiple services?
+* Can the engineer on call understand the failure quickly?
 
-## Experience
+That is the kind of backend engineering I enjoy.
 
-**Optum · Software Developer II**  
-January 2026 – Present · Texas, United States
+---
 
-Go and Java backend development, service modernization, full-stack feature delivery, Kubernetes deployments, and production troubleshooting.
+## 📈 Engineering Impact
 
-**United Airlines · FullStack Engineer**  
-January 2024 – December 2025 · Chicago, Illinois
+| Challenge               | Result                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------- |
+| Java → Go modernization | Migrated **3 core backend services**, reducing infrastructure costs by **~20%** |
+| API performance         | Reduced average response latency from **~280 ms → <150 ms** under peak load     |
+| High-volume services    | Worked on systems processing **100K+ daily transactions**                       |
+| Throughput optimization | Improved API throughput by **up to 30%**                                        |
+| Database performance    | Reduced query execution time from **~420 ms → ~290 ms**                         |
+| Production reliability  | Resolved **5+ high-priority production incidents** through RCA                  |
+| Security                | Implemented OAuth2 + RBAC supporting **200+ operators across 50+ warehouses**   |
 
-Spring Boot microservices, Kafka integration, API throughput optimization, and reusable Angular components for enterprise applications.
+---
 
-**PepsiCo India · Software Engineer**  
-December 2020 – November 2022 · Hyderabad, India
+# 🧠 Featured Engineering Projects
 
-REST APIs for inventory and supply-chain workflows, Java-to-Go migration support, API access controls, and database optimization.
+These are not tutorial projects. I use them to explore the same problems that appear in real production systems.
 
-## Education
+## ⚙️ EventMesh
 
-**Master of Science in Information Technology**  
-Cybersecurity Focus · Atlantis University · December 2024
+### Distributed Event Processing Platform
 
-## Let's connect
+[![Repo](https://img.shields.io/badge/View_Repository-EventMesh-181717?style=flat-square\&logo=github)](https://github.com/rajbolamala-star/eventmesh-go)
 
-Interested in backend engineering, distributed systems, or production reliability? Let's talk.
+A production-style distributed event-processing system built around **Go + Kafka**.
 
-[LinkedIn](https://linkedin.com/in/dheeraj-b-807523387) · [Email](mailto:dheeraj.backend@yahoo.com) · [GitHub](https://github.com/rajbolamala-star)
+```text
+                    ┌─────────────┐
+                    │   Client    │
+                    └──────┬──────┘
+                           │
+                     POST /v1/events
+                           │
+                    ┌──────▼──────┐
+                    │   Go API    │
+                    └──────┬──────┘
+                           │
+                     Apache Kafka
+                           │
+                    ┌──────▼──────┐
+                    │ Go Workers  │
+                    └───┬─────┬───┘
+                        │     │
+                 ┌──────▼┐   └──────► Redis
+                 │Postgres│          Idempotency
+                 └────────┘
+```
+
+**Engineering problems explored:**
+
+`Consumer Groups` · `At-Least-Once Delivery` · `Idempotency` · `Retries` · `DLQ` · `Replay` · `Offset Management` · `Distributed Tracing`
+
+The platform includes:
+
+* Kafka consumer groups and explicit offset management
+* Redis-backed idempotency protection
+* PostgreSQL event lifecycle persistence
+* Multi-stage retry topics
+* Dead-letter queue handling
+* DLQ inspection and replay
+* OpenTelemetry distributed tracing
+* Prometheus metrics
+* Structured logs with trace correlation
+* Docker + Kubernetes deployment
+* k6 performance/load testing
+
+> **Design principle:** duplicates are acceptable; silent event loss is not.
+
+---
+
+## 🧪 LLM Evaluation Service
+
+### Testing AI systems like production software
+
+[![Repo](https://img.shields.io/badge/View_Repository-LLM_Eval_Go-181717?style=flat-square\&logo=github)](https://github.com/rajbolamala-star/llm-eval-go)
+
+LLMs are software dependencies too — and they need tests.
+
+This Go service runs repeatable evaluation suites against LLMs to detect:
+
+```text
+Hallucinations
+      +
+Regressions
+      +
+Quality Drift
+      +
+Latency Problems
+      +
+Unexpected Output
+```
+
+### Architecture
+
+```text
+Test Suite
+    │
+    ▼
+Concurrent Eval Runner
+    │
+    ├──────────────► LLM Provider
+    │
+    ▼
+Scoring Pipeline
+    │
+    ▼
+PostgreSQL
+    │
+    ├── Run History
+    ├── Regression Detection
+    └── Drift Analysis
+```
+
+Supports multiple evaluation strategies including:
+
+`Exact Match` · `Contains` · `Regex` · `Keywords` · `JSON Schema` · `Length` · `Latency`
+
+**Built with:** Go · Gin · PostgreSQL · Prometheus · Docker · Kubernetes
+
+---
+
+## 🚗 RouteBite
+
+### Route-aware backend recommendation engine
+
+[![Repo](https://img.shields.io/badge/View_Repository-RouteBite-181717?style=flat-square\&logo=github)](https://github.com/rajbolamala-star/routebite)
+
+A backend system built around a simple question:
+
+> **“What food can I pick up along my route without adding a huge detour?”**
+
+Instead of simply finding restaurants near a location, RouteBite evaluates restaurants relative to an **active journey**.
+
+```text
+Origin ───────────────────────────────► Destination
+                 │
+                 │ route
+                 ▼
+        Candidate Restaurants
+                 │
+                 ▼
+        RouteBite Ranking Engine
+                 │
+        ┌────────┼─────────┐
+        ▼        ▼         ▼
+      Detour   Rating    Open Now
+        │        │         │
+        └────────┼─────────┘
+                 ▼
+            Best Pick
+```
+
+The system ranks results using factors such as:
+
+* Detour time
+* User preference
+* Rating
+* Open/closed status
+* Convenience
+* Route proximity
+
+It also produces **driver-safe voice summaries** so results can be consumed without staring at a screen.
+
+**Built with:** Go · Gin · PostgreSQL · Redis · External APIs
+
+---
+
+# 🛠️ Backend Toolbox
+
+### Languages
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square\&logo=go\&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square\&logo=openjdk\&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square\&logo=postgresql\&logoColor=white)
+
+### Backend & Architecture
+
+![Gin](https://img.shields.io/badge/Gin-008ECF?style=flat-square\&logo=go\&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square\&logo=springboot\&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square\&logo=apachekafka\&logoColor=white)
+![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=flat-square)
+![REST](https://img.shields.io/badge/REST-005571?style=flat-square)
+
+### Data
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square\&logo=postgresql\&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square\&logo=redis\&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat-square\&logo=postgresql\&logoColor=white)
+
+### Cloud & Infrastructure
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square\&logo=amazonaws\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square\&logo=docker\&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square\&logo=kubernetes\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
+
+### Observability
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square\&logo=prometheus\&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square\&logo=grafana\&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square\&logo=opentelemetry\&logoColor=white)
+
+---
+
+# 🧩 How I Think About Backend Systems
+
+```text
+Correctness
+    ↓
+Reliability
+    ↓
+Observability
+    ↓
+Performance
+    ↓
+Scalability
+```
+
+Optimizing a service that is not correct is useless.
+
+Scaling a system that cannot be observed is dangerous.
+
+And adding infrastructure before understanding the bottleneck usually makes the system more complicated — not better.
+
+So my usual approach is:
+
+**Measure → Find the bottleneck → Fix the simplest thing → Measure again.**
+
+---
+
+## 🔬 Topics I'm Currently Exploring
+
+```text
+├── Advanced Go concurrency
+├── Distributed event processing
+├── Kafka delivery semantics
+├── Idempotent system design
+├── High-throughput APIs
+├── PostgreSQL performance
+├── Kubernetes reliability
+├── OpenTelemetry
+├── AI-assisted incident response
+└── Production LLM evaluation
+```
+
+---
+
+## 💼 Experience Snapshot
+
+```text
+Optum
+└── Software Developer II
+    └── Go · Java · Kubernetes · PostgreSQL · Redis
+
+United Airlines
+└── Full-Stack Engineer
+    └── Java · Spring Boot · Kafka · Angular
+
+PepsiCo
+└── Software Engineer
+    └── Backend APIs · Go · Java · OAuth2 · SQL
+```
+
+My career has progressively moved closer to the problems I enjoy most:
+
+**backend architecture → distributed systems → reliability → performance.**
+
+---
+
+## 🤝 Let's Build Something Reliable
+
+I enjoy conversations about:
+
+**Go** · **Backend Engineering** · **Distributed Systems** · **Kafka** · **System Design** · **Cloud Infrastructure** · **Production Reliability**
+
+If you're building systems where **latency, reliability, scalability, or correctness actually matter**, I'd love to connect.
+
+<div align="center">
+
+### `ship → observe → learn → improve → repeat`
+
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin)](https://linkedin.com/in/dheeraj-b)
+[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:dheeraj.backend@yahoo.com)
+
+</div>
